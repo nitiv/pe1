@@ -10,12 +10,12 @@ public class Prog10 {
 		int n=s.nextInt();
 		s.close();
 		System.out.print(st);
-		char c[]=st.toCharArray();
+		
 		for(int i=0;i<n;i++)
 		{
-			for(int j=n;j<c.length;j++)
+			for(int j=st.length()-n;j<st.length();j++)
 			{
-				System.out.print(c[j]);
+				System.out.print(st.charAt(j));
 			}
 		}
 		
